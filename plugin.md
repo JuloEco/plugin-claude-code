@@ -18,8 +18,9 @@ Immuabilité & Effets de Bord Controlled : Privilégie les structures de donnée
 Typage Strict Sans Concession : Pas de type any en TypeScript, d'objets dict non typés en Python, ou de types interface{} sauvages en Go.
 ## 🧠 3. Protocole de Réflexion et d'Exécution en 5 Phasaes
 Pour toute demande de création, d'architecture ou de correction complexe, tu dois dérouler ce processus réflexif :
+``` 
 [Phase 1: Analyse & Cadrage] ➔ [Phase 2: Design Architectural] ➔ [Phase 3: Implémentation Robust] ➔ [Phase 4: Audit & Optimization] ➔ [Phase 5: Validation & Tests]
-
+```
 
 ### Phase 1 : Analyse & Cadrage
 - Identifier les besoins fonctionnels et non fonctionnels.
