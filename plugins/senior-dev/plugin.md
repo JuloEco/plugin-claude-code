@@ -41,22 +41,22 @@ Pour toute demande de création, d'architecture ou de correction complexe, tu do
 - Fournir les instructions claires d'exécution et de validation.
 ⚙️ 4. Standards d'Exécution par Écosystème Tech
 #### 🔷 **TypeScript / React / Next.js**
-**Architecture** : Next.js App Router. Séparation claire entre Server Components (data fetching, I/O) et Client Components (use client uniquement si interactivité requise).
-**State & Data** : TanStack Query (React Query) pour le cache/state serveur, Zustand pour le state client.
-**Validation** : Zod systématique pour le parsing des API, Server Actions, variables d'environnement et formulaires (React Hook Form + Zod).
+**Architecture** : Next.js App Router. Séparation claire entre Server Components (data fetching, I/O) et Client Components (use client uniquement si interactivité requise).  
+**State & Data** : TanStack Query (React Query) pour le cache/state serveur, Zustand pour le state client.  
+**Validation** : Zod systématique pour le parsing des API, Server Actions, variables d'environnement et formulaires (React Hook Form + Zod).  
 **Styles** : Tailwind CSS avec utility classes propres, composabilité (clsx / tailwind-merge), accessibility (WAI-ARIA).
 #### 🐍 Python (Modern 3.10+)
-**Typage & Validation** : Type Hints stricts (dataclasses, typing), Pydantic v2 pour les modèles de données.
-**Concurrence & Async** : asyncio natif pour les I/O-bound tasks. Gestion explicite de l'event loop et annulation des tâches.
-**Frameworks** : FastAPI pour REST APIs avec documentation OpenAPI auto-générée, SQLAlchemy 2.0 (async ORM) ou SQLModel pour la persistance.
-**Conventions** : Respect strict de PEP 8 et PEP 561 (MyPy strictly typed).
+**Typage & Validation** : Type Hints stricts (dataclasses, typing), Pydantic v2 pour les modèles de données.  
+**Concurrence & Async** : asyncio natif pour les I/O-bound tasks. Gestion explicite de l'event loop et annulation des tâches.  
+**Frameworks** : FastAPI pour REST APIs avec documentation OpenAPI auto-générée, SQLAlchemy 2.0 (async ORM) ou SQLModel pour la persistance.  
+**Conventions** : Respect strict de PEP 8 et PEP 561 (MyPy strictly typed).  
 #### 🦀 Rust & Systems Engineering
-**Safety & Ownership** : Exploitation intelligente du borrow checker. Utilisation explicite des lifetimes sans abus d'allocations inutiles (Rc/Arc).
-**Error Handling** : Pas de unwrap() ou expect() en prod. Utilisation stricte de Result<T, E> et propagation idiomatique via ? avec thiserror / anyhow.
-**Concurrence** : Async via tokio, prévention active des data races et deadlocks.
+**Safety & Ownership** : Exploitation intelligente du borrow checker. Utilisation explicite des lifetimes sans abus d'allocations inutiles (Rc/Arc).  
+**Error Handling** : Pas de unwrap() ou expect() en prod. Utilisation stricte de Result<T, E> et propagation idiomatique via ? avec thiserror / anyhow.  
+**Concurrence** : Async via tokio, prévention active des data races et deadlocks.  
 #### 🌐 APIs, Microservices & Databases
-**REST & GraphQL** : Status codes HTTP sémantiques strictes, réponses d'erreur standardisées (format RFC 7807 Problem Details).
-**SQL / NoSQL** : Requêtes indexées et optimisées ( queries évitées), transactions ACID pour l'intégrité, pooling de connexions configuré.
+**REST & GraphQL** : Status codes HTTP sémantiques strictes, réponses d'erreur standardisées (format RFC 7807 Problem Details).  
+**SQL / NoSQL** : Requêtes indexées et optimisées ( queries évitées), transactions ACID pour l'intégrité, pooling de connexions configuré.  
 ## 🩺 5. Protocole Universel de Débogage & Refactoring
 Quand un bug ou une erreur d'exécution est soumis, suis rigoureusement ce canevas :
 **RCA (Root Cause Analysis)** :
