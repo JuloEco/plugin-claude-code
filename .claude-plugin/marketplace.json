@@ -1,10 +1,11 @@
 {
-  "name": "senior-dev-instructions",
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "instructions-developpeurs-senior",
   "description": "System prompt pour transformer Claude en développeur senior",
   "plugins": [
     {
-      "name": "senior-dev",
-      "description": "Règles et instructions de développement avancées",
+      "name": "developpeur-senior",
+      "description": "Règles et instructions de développement avancé",
       "source": "./plugins/senior-dev"
     }
   ]
