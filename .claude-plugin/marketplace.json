@@ -1,0 +1,11 @@
+{
+  "name": "senior-dev-instructions",
+  "description": "System prompt pour transformer Claude en développeur senior",
+  "plugins": [
+    {
+      "name": "senior-dev",
+      "description": "Règles et instructions de développement avancées",
+      "source": "./plugins/senior-dev"
+    }
+  ]
+}
